@@ -1,128 +1,177 @@
-<!DOCTYPE html>
-<html>
+<!doctype html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Children Optical</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="js/script.js" defer></script>
+    <!-- link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link to js -->
+    <script src="js.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--最後一組針對ios9-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Care Eye</title>
   </head>
 
-  <body>
-    <header>
-      <div id="logo">
-        <img src="images/logo.png" alt="logo" />
+  <body class="container-fluid w-576px p-3 my-3" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header id="header" class="container-fluid border">
+    <div style="background-color: whitesmoke" class="container-sm border">
+      <section class="border">
+          <h1 class="text-primary">Optical Glasses for Children</h1>
+          <p>We sell optical glasses, sunglasses and contact lenses. We specialise in optical requirements for children.</p>
+      </section>
+      <div class="alert alert-info alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Info!</strong>The seasonal big sale is coming!
       </div>
     </header>
 
-    <nav id="nav"></nav>
+    <!-- nav goes from here. -->
+<nav class="navbar navbar-expand-sm bg-dark">
 
-    <main>
-      <p>
-        We sell ophthalmic glasses, sunglasses and contact lenses. We specialise
-        in optical requirements for children.
-      </p>
-      <section>
-        <h1>About Us</h1>
-        <p>
-          We are a Brisbane based company which is well regarded locally. We are
-          recognised as being able to manage children’s needs with a
-          professional caring approach. We employ two full-time, in-store
-          qualified optometrists able to diagnose and treat a number of eye
-          related problems. Our optometrists strive to make a positive
-          difference to the health and well-being of our customers, endeavouring
-          to obtain the best visual outcome so that customers realise their full
-          potential in work, study, sport and leisure.
-        </p>
-        <p>Services supplied are as follows:</p>
-        <ul>
-          <li>Eye Examinations (may be bulk-billed)</li>
-          <li>
-            Spectacles (may be bulk-billed to private Health Fund optical cover)
-          </li>
-          <li>Diabetic eye examinations</li>
-          <li>Colour Vision assessments</li>
-          <li>Macular Degeneration tests</li>
-          <li>Glaucoma & eye pressure testing</li>
-          <li>Checks for Cataracts</li>
-          <li>Clearness of vision (myopia, hyperopia, astigmatism)</li>
-          <li>Focusing ability (Presbyopia)</li>
-          <li>Eye muscle movement and control</li>
-          <li>Amblyopia (lazy eye)</li>
-          <li>Contact lens fitting and management</li>
-          <li>Referrals for eye laser surgery</li>
-          <li>Mining & Industrial Safety Spectacles</li>
-          <li>
-            Advice on the correct fitting of good quality sunglasses (both
-            prescription and non-prescription, in both adults and children,
-            particularly in a sporting environment)
+        <ul id="myTab" class="nav nav-tabs row">
+          <li class="active col-2"><a onclick="glass" data-toggle="tab" href="#glasses" accesskey="G">Glasses</a></li>
+          <li class="col-2"><a data-toggle="tab" href="#services" accesskey="S">Services</a></li>
+          <li class="col-2"><a data-toggle="tab" href="#contact" accesskey="C">Contact</a></li>
+          <li class="col-4 dropdown">
+            <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" accesskey="A">About Us</a>
+            <div class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+              <a class="col-2" tabindex="-1" data-toggle="tab" href="#blank" accesskey="1">Section 4-1</a>
+              <a class="col-2" tabindex="-1" data-toggle="tab" href="#section42" accesskey="2">Section 4-2</a>
+            </div>
           </li>
         </ul>
-      </section>
-      <section>
-        <p>
-          Our premises are within The Myer Centre in the Queen Street Mall on
-          Level 1, Shop number 36. Our phone number is 07 3256 7101.
-        </p>
-        <p>Our trading hours are:</p>
-        <p>Mon – Thurs: 9am - 5.30pm</p>
-        <p>Fri: 9am - 9pm</p>
-        <p>Sat: 9am - 5pm</p>
-        <p>Sun: 10am - 5pm</p>
-      </section>
-      <section>
-        <p>
-          We stock a comprehensive range of frames from the following brands:
-        </p>
-        <img id="brands" src="images/brands.jpg" title="brands" />
-      </section>
-      <section>
-        <h1>About the owner and her philosophy</h1>
-      </section>
-      <article>
-        Hi, my name is Amanda B Cormer and I'm the owner of ABC Opticals, and
-        I'd like to briefly introduce you to who we are. I'm an optometrist with
-        20 years’ experience, having worked for independents and chain stores
-        both here and in London. It was in London that I gravitated to the
-        groovy, high end of the market and returned to Brisbane 9 years ago with
-        a new concept.
-      </article>
-      <article>
-        Over years of working for others, what struck me was either mediocre
-        eyewear, outdated testing equipment in the back room, or both. ABC
-        Opticals brings together the world’s finest and funkiest eyewear
-        designers, coupled with state of the art equipment to make the eye
-        examination a very civilised affair.
-      </article>
-      <article>
-        We enjoy selling quality products, and most importantly, we enjoy
-        finding the right frame for the right person. That's what we do and we
-        do it well. We don't sell eyewear over the net, so visit us in person.
-        We're worth the effort and your eyes should be too. Finally, we believe
-        that children should be treated as special people so all our staff will
-        make the experience at ABC Opticals the best we can for your child.
-      </article>
+  </nav>    
 
-      <section>
-        <h1>Features of the Website</h1>
-        <p>
-          A visually attractive site with that shows examples of your product
-          but no shopping cart features are required, as yet.
-        </p>
-        <p>A generic contact form, that captures e-mail and a message</p>
-        <p>A join/unsubscribe from e-mail newsletter feature.</p>
-        <p>
-          A book a consultation form that links to a free/busy calendar. This
-          would allow our staff to use the website as a de facto diary, negating
-          the need for paper…
-        </p>
-        <p>
-          Enter prescription details, to get a quote on a new pair of glasses.
-          An optometrist/optician will return a quote on letterhead, this is a
-          data gathering form only.
-        </p>
-      </section>
-    </main>
+<div id="myTabContent" class="tab-content">
+<div id="glasses" class="tab-pane fade in active container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+  <h1>Fashion Glasses</h1>
+  <div class="row">
+    <div class="col-sm-2">
+        <img src="image/1.jfif" class="img-fluid" alt="Responsive image1" style="width:80%">
+        <div class="alert alert-danger">
+          <strong>Out of stock!</strong>The stock will arrive in <span class="badge">14</span> days.
+        </div>
+        <img src="image/2.jfif" class="img-fluid" alt="Responsive image2" style="width:80%">
+        <img src="image/3.jfif" class="img-fluid" alt="Responsive image3" style="width:80%">
+        <img src="image/4.jfif" class="img-fluid" alt="Responsive image4" style="width:80%">     
+      </div>
+    </div>
 
-    <footer id="footer"></footer>
-  </body>
+    <div class="row">
+      <div  class="col-sm-2">
+        <img src="image/5.jfif" class="img-fluid" alt="Responsive image5" style="width:80%">
+        <img src="image/6.jfif" class="img-fluid" alt="Responsive image6" style="width:80%">
+        <img src="image/7.jfif" class="img-fluid" alt="Responsive image7" style="width:80%">
+        <img src="image/8.jfif" class="img-fluid" alt="Responsive image8" style="width:80%">
+      </div>
+    </div>
+</div>
+
+<div id="services" class="tab-pane fade container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+  <h1>Services</h1>
+  <ul>
+    <li>Eye Examinations (may be bulk-billed)</li>
+    <li>
+      Spectacles (may be bulk-billed to private Health Fund optical cover)
+    </li>
+  </ul>
+<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo">Service Details</button>
+  <div id="demo" class="collapse">
+    <ul>
+      <li>Diabetic eye examinations</li>
+      <li>Colour Vision assessments</li>
+      <li>Macular Degeneration tests</li>
+      <li>Glaucoma & eye pressure testing</li>
+      <li>Checks for Cataracts</li>
+      <li>Clearness of vision (myopia, hyperopia, astigmatism)</li>
+      <li>Focusing ability (Presbyopia)</li>
+      <li>Eye muscle movement and control</li>
+      <li>Amblyopia (lazy eye)</li>
+      <li>Contact lens fitting and management</li>
+      <li>Referrals for eye laser surgery</li>
+      <li>Mining & Industrial Safety Spectacles</li>
+      <li>
+        Advice on the correct fitting of good quality sunglasses (both
+        prescription and non-prescription, in both adults and children,
+        particularly in a sporting environment)
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="contact" class="tab-pane fade container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+  <h1>Contact information</h1>
+  <p class="bg-danger">
+      <b>
+        Our premises are within The Myer Centre in the Queen Street Mall on
+        Level 1, Shop number 36. Our phone number is 07 3256 7101.
+      </b>
+  </p>
+  <ul class="list-group">
+    <li class="list-group-item" style="background-color: royalblue;">Our trading hours are:</li>
+    <li class="list-group-item" style="background-color: royalblue;">Mon – Thurs: 9am - 5.30pm</li>
+    <li class="list-group-item" style="background-color: royalblue;">Fri: 9am - 9pm</li>
+    <li class="list-group-item" style="background-color: royalblue;">Sat: 9am - 5pm</li>
+    <li class="list-group-item" style="background-color: royalblue;">Sun: 10am - 5pm</li>
+  </ul>
+
+</div>
+<div id="aboutus" class="tab-pane fade container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+  <h1>About Us</h1>
+  <p>
+      We are a Brisbane based company which is well regarded locally. We are
+      recognised as being able to manage children’s needs with a
+      professional caring approach. We employ two full-time, in-store
+      qualified optometrists able to diagnose and treat a number of eye
+      related problems. Our optometrists strive to make a positive
+      difference to the health and well-being of our customers, endeavouring
+      to obtain the best visual outcome so that customers realise their full
+      potential in work, study, sport and leisure.
+    </p>
+</div>
+<div id="blank" class="tab-pane fade container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">Section 4-1</div>
+<div id="section42" class="tab-pane fade container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+  Section 4-2
+</div>
+</div>
+
+<!-- nav ended here -->
+  
+    <div class="w-auto" style="height:50px; background-color: rgba(167, 1, 167, 0.575)";></div>
+    <h1>Children Optical</h1>
+
+    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-eyeglasses" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M4 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 0-4 0 2 2 0 0 0 4 0z"/>
+    </svg>
+    <svg width="400" height="180">
+      <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+      style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+    </svg>
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+    </svg>
+    <svg height="210" width="400">
+      <path d="M150 0 L75 200 L225 200 Z" />
+    </svg>
+
+<footer>
+  <article>This is the footer.</article>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
 </html>
